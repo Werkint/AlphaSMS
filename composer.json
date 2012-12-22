@@ -1,20 +1,20 @@
 {
-	"name":       "nick4fake/alphasms",
-	"type":       "library",
-	"description":"AlphaSMS module",
-	"license":    "own",
-	"authors":    [
-		{
-			"name": "Bogdan Yurov",
-			"email":"bogdan@yurov.me"
-		}
-	],
-	"require":    {
-		"php":">=5.3"
-	},
-	"autoload":   {
-		"psr-0":{
-			"SMSClient":"lib/"
-		}
-	}
+    "name":        "nick4fake/alphasms",
+    "type":        "library",
+    "description": "AlphaSMS client",
+    "license":     "GPL",
+    "authors":     [
+        {
+            "name":  "Bogdan Yurov",
+            "email": "bogdan@yurov.me"
+        }
+    ],
+    "require":     {
+        "php": ">=5.3"
+    },
+    "autoload":    {
+        "psr-0": {
+            "SmsClient": "lib/"
+        }
+    }
 }
