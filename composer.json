@@ -1,5 +1,5 @@
 {
-    "name":        "nick4fake/alphasms",
+    "name":        "werkint/alphasms",
     "type":        "library",
     "description": "AlphaSMS client",
     "license":     "GPL",
@@ -9,8 +9,9 @@
             "email": "bogdan@yurov.me"
         }
     ],
+    "version":     "1.0.0",
     "require":     {
-        "php": ">=5.3"
+        "php": ">=5.4"
     },
     "autoload":    {
         "psr-0": {
