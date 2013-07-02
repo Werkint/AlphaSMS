@@ -10,11 +10,12 @@
         }
     ],
     "require":     {
-        "php": ">=5.4"
+        "werkint/httpclient": "*",
+        "php":                ">=5.4"
     },
     "autoload":    {
         "psr-0": {
-            "SmsClient": "lib/"
+            "Werkint\\Alphasms": "lib/"
         }
     }
 }
