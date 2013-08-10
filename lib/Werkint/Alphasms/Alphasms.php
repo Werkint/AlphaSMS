@@ -49,7 +49,9 @@ class Alphasms
             'flash'         => $flash,
             'class_version' => static::VERSION,
         ]);
-        $response = new Response($data['errors']);
+        $response = new Response(
+            isset($data['errors']) ? $data['errors'] : null
+        );
         if (isset($data['id'])) {
             $response->setId($data['id']);
         }

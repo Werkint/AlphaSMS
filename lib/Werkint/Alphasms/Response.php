@@ -9,9 +9,11 @@ class Response
     protected $balance;
     protected $status;
 
-    public function __construct(array $errors = [])
+    public function __construct(array $errors = null)
     {
-        $this->errors = $errors;
+        if ($errors) {
+            $this->errors = $errors;
+        }
     }
 
     public function hasErrors()
