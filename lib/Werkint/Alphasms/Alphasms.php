@@ -69,7 +69,9 @@ class Alphasms
         $data = $this->execute('receive', [
             'id' => $id,
         ]);
-        $response = new Response($data['errors']);
+        $response = new Response(
+            isset($data['errors']) ? $data['errors'] : null
+        );
         if (isset($data['status'])) {
             $response->setStatus($data['status']);
         }
@@ -84,7 +86,9 @@ class Alphasms
     public function getBalance()
     {
         $data = $this->execute('balance');
-        $response = new Response($data['errors']);
+        $response = new Response(
+            isset($data['errors']) ? $data['errors'] : null
+        );
         if (isset($data['balance'])) {
             $response->setBalance($data['balance']);
         }
