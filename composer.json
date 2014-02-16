@@ -2,7 +2,7 @@
     "name":        "werkint/alphasms",
     "type":        "library",
     "description": "AlphaSMS client",
-    "license":     "GPL",
+    "license":     "GPL-3.0+",
     "authors":     [
         {
             "name":  "Bogdan Yurov",
@@ -10,12 +10,21 @@
         }
     ],
     "require":     {
-        "werkint/httpclient": "*",
-        "php":                ">=5.4"
+        "guzzle/guzzle": "*",
+
+        "php": ">=5.4"
     },
     "autoload":    {
-        "psr-0": {
-            "Werkint\\Alphasms": "lib/"
+        "psr-4": {
+            "Werkint\\Alphasms\\": "lib/",
+            "Werkint\\Alphasms\\Tests\\": "tests/"
         }
-    }
+    },
+    "extra":       {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+
+    "minimum-stability": "dev"
 }
