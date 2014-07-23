@@ -10,7 +10,7 @@ use Guzzle\Http\Client;
  */
 class Sender
 {
-    const BASEURL = 'https://alphasms.com.ua/api/http.php';
+    const BASEURL = 'https://alphasms.ua/api/http.php';
 
     protected $link;
 
